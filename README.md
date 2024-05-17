@@ -16,19 +16,22 @@ Each of the applications listed below are required prior to performing the insta
   * [VirtualBox 7.0+](https://www.virtualbox.org/)
 
 ### Installing
-Option B only.
-Will provision a VM with all required packages installed to be used immediately.
+
 1. Clone the repository `git clone https://github.com/nasa/nos3.git`
 2. `cd nos3`
 3. Clone the submodules `git submodule update --init --recursive`
-4. Run `vagrant up` and wait to return to a prompt
+
+Option B only.
+Will provision a VM with all required packages installed to be used immediately.
+1. Run `vagrant up` and wait to return to a prompt
     - This can take anywhere from a few minutes to hours depending on internet speeds and host PC specs
 _It may also be wise at around this stage to shutdown the VM once it starts and to allocate it more resources if possible, preferably at least 4 cores and 8 GB of RAM, preferably 8 cores and 16 GB of RAM._
-5. In VirtualBox `Devices > Upgrade Guest Additions...`
+2. In VirtualBox `Devices > Upgrade Guest Additions...`
 	- Wait for this to complete
-6. Run `vagrant reload` to finish the upgrade
-7. Login to the jstar user using the password `jstar123!` and get to work!
-8. Try building and running following the instructions below
+3. Run `vagrant reload` to finish the upgrade
+4. Login to the jstar user using the password `jstar123!` and get to work!
+5. Try building and running following the instructions below
+
 
 ### Getting started
 By default the nos3 repository is shared into the virtual machine at `/home/jstar/Desktop/github-nos3`
